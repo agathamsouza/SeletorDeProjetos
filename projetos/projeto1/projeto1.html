@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Cuidados com o Pet</title>
 
     <style>
         * {
@@ -19,198 +19,184 @@
         }
     </style>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CORREÇÃO 1: Versão do Bootstrap corrigida para 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 
 <body>
 
     <div style="min-height: 100vh;" class="d-flex flex-column">
 
-        <header style="min-height: 10vh;">
-
+        <header id="inicio" style="min-height: 10vh;">
             <nav class="navbar bg-body-tertiary"
-                style="height: 10vh; background-image: linear-gradient(to right bottom, #dae1ce, #bfd0b4, #a0c09d, #7db18a, #55a17b);">
+                style="height: 10vh; background-image: linear-gradient(to left, #421e1e, #532121, #632425, #752728, #862a2a);">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="./images/icon.png" alt="Logo" width="30" height="30"
-                            class="d-inline-block align-text-top">
-                        - Cuidados com Animais No Verão
+                        <img src="./images/icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                        <b style="color: rgb(245, 230, 200); font-family: 'Times New Roman', Times, serif; font-size: x-large;"> --- Doe Pelúcias! --- </b>
                     </a>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#pag2">Faça Sua Doação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#pag3">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-
         </header>
 
         <main>
             <!-- pagina 1 -->
-            <section style="min-height: 100vh; background-image: url('./images/catwalpaper.jpg');
+            <section style="min-height: 90vh; background-image: url('./images/peluciawall.jpg');
              background-size: cover; background-position: center; background-repeat: no-repeat; display: flex;
              flex-direction: column; align-items: center; justify-content: center;">
 
-                <h3 style="color: rgba(240, 248, 255, 0.89);">
-                    Seu pet precisa de atençao nesse verao!</h3>
-                <h4 style="color: rgba(240, 248, 255, 0.89);">
-                    O el nino está chegando, cuidado para seu pet não queimar as patinhas!</h4>
-                <hr>
+                <h3 style="color: rgba(245, 230, 200, 0.849);">Faça alguem feliz doando!</h3>
+                <h4 style="color: rgba(245, 230, 200, 0.849); text-align: center;">Crianças e pets podem amar a sua pelúcia que está juntando pó aí!</h4>
+                <hr style="width: 50%; color: white;">
                 <a href="#pag2">
-                    <button id="btnpg1" style="opacity: 0.85" class="btn btn-success">Clique aqui para saber
-                        mais!</button>
+                    <button id="btnpg1" style="opacity: 0.85; background-color: #862a2a;border-color: #6d1212;" class="btn btn-success mt-3"><b>--- Clique aqui para saber mais! ---</b></button>
                 </a>
-
             </section>
 
-            <!-- pagina 2 -->
-            <section id="pag2" style="min-height: 100vh; background-color: rgb(71, 109, 64);display: flex;">
-
-                <div class="container-fluid">
-
+            <!-- CORREÇÃO 2: Removido o "display: flex;" do style desta section -->
+            <section id="pag2" style="min-height: 100vh; background-color: rgb(136, 136, 136);">
+                <div class="container-fluid h-100">
                     <div class="row" style="min-height: 100vh;">
+                        
+                        <!-- Coluna 1 -->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-4"
+                            style="background-color: #724b32;">
+                            <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                            <h2 style="color:antiquewhite">- Cuidados com as doações -</h2>
+                            <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                            <br>
+                            <br>
 
-                        <!-- coluna esquerda -->
-                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
-                            style="background-color: #7db18a;">
-
-                            <h2>Cuidados com o Pet</h2>
-
-                            <hr>
-
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <div class="accordion w-100" id="accordionExample">
+                                <div class="accordion-item" style="border-color: #6b4539;">
+                                    <h2 class="accordion-header" >
+                                        <button style=" border-color: #421e1e;background-color: #8b6247; color: #ffffff;" class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
-                                            Cuidado 1: Hidrataçao
+                                            ☆ Cuidado 1: Inspeção
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>Lorem ipsum dolor sit amet,
-                                                consectetur adipisicing elit. Corporis
-                                                sed sit, aspernatur optio pariatur deserunt
-                                                quas fugiat quos ipsa repellendus debitis tenetur
-                                                blanditiis dicta vero quis temporibus neque dolore labore.
+                                            <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Corporis sed sit.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+                                <div class="accordion-item" style="border-color: #6b4539;">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button  style="background-color: #8b6247; color: #ffffff; border-color: #421e1e;" class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            Cuidado 2: Comida
+                                            ☆ Cuidado 2: Lavagem
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Optio corrupti veritatis, consectetur placeat aliquid
-                                                voluptatibus doloremque asperiores excepturi mollitia ab
-                                                perferendis porro incidunt ea voluptates odio aut cum
-                                                sapiente tenetur?
+                                            <strong>Lorem ipsum dolor sit amet.</strong> Optio corrupti veritatis.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+                                <div class="accordion-item" style="border-color: #6b4539;">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button  style="background-color: #8b6247; color: #ffffff;" class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
-                                            Cuidado 3: Saúde e Higiene
+                                            ☆ Cuidado 3: Cadastro no Sistema
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Reprehenderit, perferendis fugit. Incidunt iure quaerat laborum
-                                                aperiam odio, alias dolorem molestias dolor libero itaque nulla
-                                                accusantium, quisquam ea sed quod earum.
+                                            <strong>Lorem ipsum dolor, sit amet.</strong> Reprehenderit, perferendis fugit.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- coluna direita -->
-                        <div class="col-12 col-md-6 d-flex flex-column align-items-center"
-                            style="background-color: #34583d;">
-
-                            <h2>Principais Impactos do EL nino nos pets!</h2>
-                            <hr>
-                            <ul class="list-group">
-                                <li class="list-group-item list-group-item-success" aria-current="true">Lorem, ipsum
-                                    dolor sit amet consectetur
-                                    adipisicing elit. Quos, sit, hic repellendus facilis deserunt dolorem
-                                    fugiat id itaque repellat nobis necessitatibus placeat? Numquam alias
-                                    ut expedita quia illum voluptatem harum.</li>
-                                <li class="list-group-item list-group-item-success">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing
-                                    elit. Similique aliquam nam vitae, cumque perferendis velit enim
-                                    libero qui nisi odit consectetur tenetur obcaecati ullam esse
-                                    accusantium quos rem aspernatur hic.</li>
-                                <li class="list-group-item list-group-item-success">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing
-                                    elit. In, consectetur earum! Saepe placeat quasi, ipsum non dolores
-                                    nisi at quae. Dolor nulla voluptates laborum? Nihil sed voluptatem
-                                    iste molestias maxime!</li>
-                                <li class="list-group-item list-group-item-success">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing
-                                    elit. Esse incidunt quis optio, ab dolorem a molestias tenetur quisquam
-                                    ex reprehenderit, architecto amet! Distinctio aliquid a perspiciatis,
-                                    ipsa ipsam veniam sed!</li>
-                                <li class="list-group-item list-group-item-success">Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing
-                                    elit. Sit cupiditate in voluptas, quaerat dicta explicabo delectus
-                                    blanditiis officia ullam expedita excepturi sint eligendi quia iste
-                                    Rerum cupiditate sapiente fugit dicta?</li>
+                        <!-- Coluna 2 -->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-4"
+                            style="background-color: #8b6247; color: white;">
+                            <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                            <h2 style="color: antiquewhite;">- Principais motivos para doar! -</h2>
+                            <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                            <br>
+                            <br>
+                            
+                            <ul class="list-group w-100">
+                                <li class="list-group-item list-group-item-success"  style="background-color: #724b32; color: #ffffff; border-color: #683b27;" aria-current="true">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </li>
+                                <li class="list-group-item list-group-item-success"  style="background-color: #724b32; color: #ffffff; border-color: #683b27;">
+                                    Similique aliquam nam vitae, cumque perferendis velit.
+                                </li>
+                                <li class="list-group-item list-group-item-success"  style="background-color: #724b32; color: #ffffff; border-color: #683b27">
+                                    In, consectetur earum! Saepe placeat quasi, ipsum non dolores.
+                                </li>
+                                <li class="list-group-item list-group-item-success"  style="background-color: #724b32; color: #ffffff; border-color: #683b27">
+                                    Esse incidunt quis optio, ab dolorem a molestias.
+                                </li>
+                               
                             </ul>
-
                         </div>
 
                     </div>
-
                 </div>
-
             </section>
 
             <!-- pagina 3 -->
-            <section style="min-height: 100vh; background-color: rgb(168, 199, 132); " class="d-flex justify-content-center align-items-center flex-column">
+            <section id="pag3" style="min-height: 100vh; background-color: rgb(175, 135, 102); "
+                class="d-flex justify-content-center align-items-center flex-column text-center p-4">
 
-                <h1>Gostaria de mais informaçoes? entre em contato com nossa ong!</h1>
+                <h1 style="color: #694b39;">- Gostaria de mais informações? Entre em contato conosco! -</h1>
+                <hr class="w-100" style="color: #ffffff;">
 
-                <hr>
-
-                <form>
+                <form style="width: 100%; max-width: 400px; text-align: left;">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                        <label for="exampleInputEmail1" class="form-label" style="color: #ffffff;">Email:</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">nao vamos compartilhar seu email.</div>
+                        <div id="emailHelp" class="form-text" style="color: #ffffffa2;">Não vamos compartilhar seu email.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Nome:</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1" class="form-label" style="color: #ffffff;">Nome:</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
                     </div>
-                
-                    <button type="submit" class="btn btn-primary">enviar</button>
+                    <button style="background-color: #862a2a;border-color: #6d1212;"type="submit" class="btn btn-primary w-100">Enviar</button>
                 </form>
-
             </section>
-
         </main>
 
-        <footer class="mt-auto" style="min-height: 10vh; background-color: rgb(37, 11, 11);">
-
+        <footer class="mt-auto d-flex align-items-center justify-content-center" style="min-height: 10vh; background-color: #6d1212;">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#inicio">- Início -</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#pag2">Cuidados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#pag3">Contato</a>
+                </li>
+            </ul>
         </footer>
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <!-- CORREÇÃO 3: Versão do script corrigida para 5.3.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

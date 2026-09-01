@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oishii</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imagemcarrosel {
+            object-fit: cover;
+            height: 400px !important;
+        }
+
+        .carousel {
+            height: 400px !important;
+        }
+
+        body {
+            background-color: #250000 !important;
+        }
+
+        .mg {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="pag1" style="min-height: 100vh;" class="d-flex flex-column">
+
+        <header>
+
+            <nav class="navbar" style="background-color: #3f0000;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" style="color: aliceblue; font-size: xx-large;">
+                        <img src="./images/oishiicon.jpg" alt="Logo" width="50" height="50"
+                            class="d-inline-block align-text-top" style="border-radius: 50%;">
+                        <b>O</b>ishii
+                    </a>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#pag2">Faça Seu Pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#pag3">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+            <!-- pagina 1 -->
+
+            <section style="min-height: 100vh; background-image: url('./images/back1.png');
+             background-size: cover; background-position: center; background-repeat: no-repeat; display: flex;
+             flex-direction: column; align-items: center; justify-content: center;">
+
+                <h1 style="background-color: #0000006e; color: rgba(255, 255, 255, 0.932); font-size: xxx-large;"><b>•
+                        Oishii Rio Claro •</b></h1>
+                <h4 style="background-color: #0000006e;color: rgba(255, 255, 255, 0.932); text-align: center;">•
+                    Servimos Rodízio, À la carte e Delivery! •</h4>
+                <a href="#pag2">
+                    <button id="btnpg1"
+                        style="font-size: x-large; opacity: 0.85; background-color: rgb(97, 0, 0); color: #fffffffd;border-color: #6d1212;"
+                        class="btn btn-success mt-3">- Saiba Mais -</button>
+                </a>
+            </section>
+        </main>
+
+        <!-- pagina 2 -->
+
+        <main>
+            <div id="pag2" class="col-md-100 d-flex flex-column align-items-center justify-content-top p-4"
+                style="background-color: #250000;">
+                <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                <h2 style="color:rgb(255, 255, 255)">- No Delivery - </h2>
+                <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                <br>
+                <div class="row">
+
+
+                    <section id="pag2" style="min-height: 100vh; background-color: #250000; margin-top: 50px;">
+                        <div class="container-fluid" style="min-height: 100vh;">
+                            <div class="row" style="min-height: 30vh;">
+                                <div class="col d-flex flex-row justify-content-center align-items gap-5 ms-5 me-5">
+
+                                    <div id="carouselExampleCaptions" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators" style="background-color: #00000033;">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/ceviche.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Entradas Frias -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Ceviche - R$ 41,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/NasuNoMarine.jpg"
+                                                    class="d-block w-100 imagemcarrosel" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Entradas Frias -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Nasu no marine - R$ 30,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/TartarSalmao.jpg"
+                                                    class="d-block w-100 imagemcarrosel" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Entradas Frias -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Tartar de Salmão - R$ 50,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/Sunomono.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Entradas Frias -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Sunomono - R$ 25,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+
+
+
+                                    <div id="carouselExampleCaptions2" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators" style="background-color: #00000033;">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                                data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/temaki1.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Maguro (Atum) - R$
+                                                        50,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki2.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Shake - R$ 34,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki3.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Temakis
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Temaki
+                                                        Philadelfia - R$ 42,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki4.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Mexicano - R$ 45,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki5.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Salmão Grelhado - R$
+                                                        40,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki6.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Califórnia - R$ 25,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki7.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Shimeji - R$ 40,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki8.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Shake no shimeji - R$
+                                                        45,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki9.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Temakis -</b></h5>
+                                                    <p style="background-color: #0000004f;">Temaki Low carb (sem arroz,
+                                                        Recheio à escolha) - R$ 52,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+
+                                    <div id="carouselExampleCaptions3" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators" style="background-color: #00000033;">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                                data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/roll1.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Rolls -</b></h5>
+                                                    <p style="background-color: #0000004f;">Uramaki Salmão - 8 unid. -
+                                                        R$ 34,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/roll2.png" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5 style="background-color: #0000004f;">- Rolls -</h5>
+                                                    <p style="background-color: #0000004f;">Uramaki salmão Furai - 8
+                                                        unid. - R$ 40,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/roll3.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5 style="background-color: #0000004f;">- Rolls -</h5>
+                                                    <p style="background-color: #0000004f;">Hossomaki Salmão - 8 unid. -
+                                                        R$ 30,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/roll4.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5 style="background-color: #0000004f;">- Rolls -</h5>
+                                                    <p style="background-color: #0000004f;">Hossomaki Pepino - 8 unid. -
+                                                        R$ 22,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/roll6.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5 style="background-color: #0000004f;">- Rolls -</h5>
+                                                    <p style="background-color: #0000004f;">Uramaki Salmão Gomae - 8
+                                                        unid - R$ 45,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+
+
+                                    <div id="carouselExampleCaptions4" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators" style="background-color: #00000033;">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions4"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions4"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions4"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions4"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/nj1.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Niguiri e Joe -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Niguimix - 9 unid. (3
+                                                        niguiris negui
+                                                        shoga de atum c/ gengibre, 3
+                                                        niguiris barriga salmao trufado, 3
+                                                        niguiris salmao brulee) - R$ 65,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/nj2.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Niguiri e Joe -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Niguibasic - 8 unid. (2
+                                                        niguiris
+                                                        atum, 2 niguiris salmão,2 niguiris
+                                                        peixe branco, 2 niguiris skin) - R$
+                                                        50,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/nj3.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Niguiri e Joe -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Joe - 2 unid. - R$ 13,50</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/nj4.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Niguiri e Joe -</b>
+                                                    </h5>
+                                                    <p style="background-color: #0000004f;">Jowmix - 8 unid. (2 jow
+                                                        salmão c/
+                                                        ovas, 2 jow atum spicy, 2 jow atum
+                                                        c/ avocato, 2 jow salmão maçaricado
+                                                        c/ caramelo de limão) - R$ 70,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+
+
+                                    <!--FIM COLUNA-->
+                                </div>
+
+                                <!--FIM LINHA-->
+                            </div>
+
+                            <div class="row mt-3" style="min-height: 100vh;">
+                                <div
+                                    class="col d-flex flex-row justify-content-center align-items gap-5 ms-5 me-5 mt-5">
+
+                                    <div id="carouselExampleCaptions" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/carp.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Carpaccio -</b></h5>
+                                                    <p style="background-color: #0000004f;">Trufado - 15 unid - R$ 54,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="carouselExampleCaptions5" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators" style="background-color: #00000033;">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions5"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions5"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions5"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions5"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions5"
+                                                data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/sashimi1.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Sashimi -</b></h5>
+                                                    <p style="background-color: #0000004f;">Salmão Fresh (Fatias de
+                                                        salmão com raspas de limão siciliano) -
+                                                        10 unid. - R$ 42,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/sashimi2.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Sashimi -</b></h5>
+                                                    <p style="background-color: #0000004f;">Atum - 10 unid. - R$ 50,00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/sashimi3.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Sashimi -</b></h5>
+                                                    <p style="background-color: #0000004f;">Sashimi Colection (Fatias de
+                                                        pescados frescos e ovas) - 20 unid.
+                                                        - R$ 67,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/sashimi4.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Sashimi -</b></h5>
+                                                    <p style="background-color: #0000004f;">Maguro no Gomaae (Fatias de
+                                                        atum selado com gergelim. Acompanha
+                                                        molho refrescante com base de hortelã) - 10 unid - R$ 57,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/sashimi5.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="background-color: #0000004f;">- Sashimi -</b></h5>
+                                                    <p style="background-color: #0000004f;">Salmão no Tataki (Fatias de
+                                                        salmão selado , regados com molho
+                                                        tarê e raspas de limão siciliano) - 10 unid. - R$ 52,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions5" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions5" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+
+                                    <div id="carouselExampleCaptions6" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators" style="background-color: #00000033;">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions6"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions6"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions6"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions6"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/b1.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Bebidas
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Água sem gás -
+                                                        R$ 8,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/b2.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Bebidas
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Água com gás -
+                                                        R$ 8,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/b3.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Bebidas
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Refrigerantes
+                                                        (Coca, Sprite, Guaraná
+                                                        Antártica, Tônica Antártica (e versões Zero) e Schweppes) - R$
+                                                        9,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/b4.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Bebidas
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">H20h! - R$
+                                                        12,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions6" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"
+                                                style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions6" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"
+                                                style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+
+
+                                    <div id="carouselExampleCaptions7" class="carousel slide" style="width: 25%;">
+                                        <div class="carousel-indicators" style="background-color: #00000033;">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions7"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions7"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions7"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions7"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/c1.webp" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:rgb(0, 0, 0); background-color: #ffffffa1;">-
+                                                            Cervejas -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Heineken Sem
+                                                        Glúten (330ml) - R$ 18,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/c2.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Cervejas
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Heineken Zero
+                                                        Álcool - R$ 18,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/c3.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Cervejas
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Amstel Ultra
+                                                        (275ml) - R$ 15,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/c4.jpg" class="d-block w-100 imagemcarrosel"
+                                                    alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b style="color:black; background-color: #ffffffa1;">- Cervejas
+                                                            -</b></h5>
+                                                    <p style="color:black; background-color: #ffffffa1;">Dama Bier TUPI
+                                                        (600ml) - R$ 30,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions7" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"
+                                                style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden"
+                                                style="background-color: #00000062;">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions7" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"
+                                                style="background-color: #00000062;"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+
+
+
+                                    </div>
+
+
+
+
+                    </section>
+                    <!--FIM COLUNA-->
+                </div>
+
+            </div>
+
+            <div
+                style="margin-top: 30px; min-height:10vh;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                <a href=" https://mlagastronomia.saipos.com/home">
+                    <button id="btnpg1" style="font-size: x-large; opacity: 0.85; background-color: rgb(97, 0, 0); color: #fffffffd;border-color: #6d1212;
+                                                    width: 70vw;" class="btn btn-success ms-5"> Peça aqui!
+                    </button>
+                </a>
+                <section>
+                    <br>
+                    
+                    <br>
+                    <h2 style="color: #e4e4e4;">Local do estabelecimento:</h2>
+<br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2240829049024!2d-47.565160299999995!3d-22.4205902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7daf6134af097%3A0xc1fbc16da95ff2ac!2sOishii%20Sushi%20Bar!5e0!3m2!1spt-BR!2sbr!4v1788271052730!5m2!1spt-BR!2sbr"
+                        width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                </section>
+                <br>
+            </div>
+
+
+        </main>
+
+        <main>
+            <section id="pag3" style="min-height: 100vh; background-color: rgb(136, 136, 136);">
+                <div class="container-fluid h-100">
+                    <div class="row" style="min-height: 100vh;">
+
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-4"
+                            style="background-color: #000000; color: #ffffffea;">
+                            <h1>Delivery:</h1>
+                            <br>
+                            <p style="color: aliceblue;">
+                            <p>Domingo
+                                19:00 às 22:00</p>
+                            <p>Terça-feira
+                                19:00 às 22:00</p>
+                            <p>Quarta-feira
+                                11:45 às 14:15 - 19:00 às 22:00</p>
+                            <p>Quinta-feira
+                                11:45 às 14:15 - 19:00 às 22:00</p>
+                            <p>Sexta-feira
+                                11:45 às 14:15 - 19:00 às 22:00</p>
+                            <p>Sábado
+                                11:45 às 14:15 - 19:00 às 22:00</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-4"
+                            style="background-color: #000000; color: #ffffffea;">
+                            <h1>No Estabelecimento:</h1>
+                            <br>
+                            <p>terça-feira 19:00 às 23:00</p>
+                            <p>quarta-feira 11:30 às 14:30 -
+                                19:00 às 23:00</p>
+                            <p>quinta-feira 11:30 às 14:30 -
+                                19:00 às 23:00</p>
+                            <p> sexta-feira 11:30 às 14:30 -
+                                19:00 às 23:00</p>
+                            <p>sábado 19:00 às 23:00</p>
+                            <p>domingo 19:00 às 23:00</p>
+                            <p>segunda-feira - fechado</p>
+                        </div>
+
+                        <div class=" d-flex justify-content-center align-items-center flex-column"
+                            style="background-color: #3f0000;">
+                            <hr>
+                            <h1 style="color: #ffffffea;">Gostaria de mais informações?</h1>
+                            <br>
+                            <h2 style="color: #ffffffea;"> Entre em contato conosco! </h2>
+                            <hr class="w-100" style="color: #e4e4e4;">
+
+                            <form style="width: 100%; max-width: 400px; text-align: left;">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"
+                                        style="color: #b88787;">Email:</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text" style="color: #aa8383a2;">Não vamos
+                                        compartilhar
+                                        seu
+                                        email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label"
+                                        style="color: #b88787;">Nome:</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button style="background-color: #862a2a;border-color: #6d1212;" type="submit"
+                                    class="btn btn-primary w-100">Enviar</button>
+                                    
+                            </form>
+                            <br>
+                        </div>
+                        
+            </section>
+            
+        </main>
+
+        <footer>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a style="color:#835a5a" class="nav-link active" aria-current="page" href="#pag1">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:#835a5a" class="nav-link" href="#pag2">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:#835a5a" class="nav-link" href="#pag3">contato</a>
+                </li>
+            </ul>
+        </footer>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

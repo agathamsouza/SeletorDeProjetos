@@ -1,0 +1,635 @@
+<!-- Atividade Bootstrap:
+
+Crie um site de algum estabelecimento real 
+(Qualquer lugar) na qual contenha:
+
+Cabeçalho de Navegação
+Pagina Principal
+Pagina de Produtos ou Serviços
+Pagina de Contato 
+Rodapé
+
+Caso queira adicionar mais paginas fique a vontade , as obrigatórias
+estão listadas acima!
+
+
+Após a construção do site , link ele no seletor de Projetos
+card 2 , e suba no GitHub!.
+PRAZO: QUINTA FEIRA 17:15 NO GITHUB, NO MESMO REPOSITORIO SELETORDEPROJETOS
+ATENÇÃO: Você pode usar I.A para gerar conteúdo (Informações , imagens etc) , entretanto
+proibido utilização para gerar código (Sua nota será zerada!)
+Prefiro um site "feio cru" doque I.A MADE!.  
+
+
+
+PERGUNTAS
+
+-como coloco pra ficar uma imagem embaixo da outra  e como faz pra ficar as legendas 
+no modo celular
+-como deixo a barrinha e setinhas de alguns carrosseis preto
+-como centralizo o botao-->
+
+
+
+<!-- minhas informaçoes: -->
+
+
+<div class="row" style="min-height: 100vh;">
+
+                        <div class="col-md-100 d-flex flex-column align-items-center justify-content-top p-4"
+                            style="background-color: #250000;">
+                            <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                            <h2 style="color:rgb(255, 255, 255)">- No Delivery - </h2>
+                            <hr class="w-100" style="border-color:rgb(255, 255, 255)">
+                            <br>
+                            <div class="row">
+
+                                <div class="col d-flex flex-wrap gap-5 justify-content-center">
+
+                                    <!-- primeiro carrossel -->
+
+                                    <div id="carouselExampleCaptions" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/ceviche.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5> <b>- Entradas Frias -</b> </h5>
+                                                    <p> Ceviche - R$ 41,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/NasuNoMarine.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5> <b>- Entradas Frias -</b> </h5>
+                                                    <p>Nasu no marine - R$ 30,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/TartarSalmao.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5> <b>- Entradas Frias -</b> </h5>
+                                                    <p>Tartar de Salmão - R$ 50,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/Sunomono.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5> <b>- Entradas Frias -</b> </h5>
+                                                    <p>Sunomono - R$ 25,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+
+                                    <!-- 2 carrossel -->
+                                    <div id="carouselExampleCaptions" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/temaki1.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b>- Temakis -</b></h5>
+                                                    <p>Temaki Maguro (Atum) - R$ 50,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki2.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b>- Temakis -</b></h5>
+                                                    <p>Temaki Shake - R$ 34,00</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/temaki3.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5><b>- Temakis -</b></h5>
+                                                    <p>Temaki Philadelfia - R$ 42,00</p>
+                                                </div>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="./images/temaki4.jpg" class="d-block w-100" alt="...">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5><b>- Temakis -</b></h5>
+                                                            <p>Temaki Mexicano - R$ 45,00</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="./images/temaki5.jpg" class="d-block w-100"
+                                                                alt="...">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <h5><b>- Temakis -</b></h5>
+                                                                <p>Temaki Salmão Grelhado - R$ 40,00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="./images/temaki6.jpg" class="d-block w-100"
+                                                                    alt="...">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                    <h5><b>- Temakis -</b></h5>
+                                                                    <p>Temaki Califórnia - R$ 25,00</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-inner">
+                                                                <div class="carousel-item active">
+                                                                    <img src="./images/temaki7.jpg"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5><b>- Temakis -</b></h5>
+                                                                        <p>Temaki Shimeji - R$ 40,00</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-inner">
+                                                                    <div class="carousel-item active">
+                                                                        <img src="./images/temaki8.jpg"
+                                                                            class="d-block w-100" alt="...">
+                                                                        <div class="carousel-caption d-none d-md-block">
+                                                                            <h5><b>- Temakis -</b></h5>
+                                                                            <p>Temaki Shake no shimeji - R$ 45,00</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="./images/temaki9.jpg"
+                                                                                class="d-block w-100" alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Temakis -</b></h5>
+                                                                                <p>Temaki Low carb (sem arroz) Recheio à
+                                                                                    escolha - R$
+                                                                                    52,00
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button"
+                                                                        data-bs-target="#carouselExampleCaptions"
+                                                                        data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"
+                                                                            aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button"
+                                                                        data-bs-target="#carouselExampleCaptions"
+                                                                        data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"
+                                                                            aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <!-- 3 carrossel -->
+                                                                <div id="carouselExampleCaptions"
+                                                                    class="carousel slide">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="0" class="active"
+                                                                            aria-current="true"
+                                                                            aria-label="Slide 1"></button>
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="1"
+                                                                            aria-label="Slide 2"></button>
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="2"
+                                                                            aria-label="Slide 3"></button>
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="3"
+                                                                            aria-label="Slide 4"></button>
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="5"
+                                                                            aria-label="Slide 6"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="./images/roll1.jpg"
+                                                                                class="d-block w-100" alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Rolls -</b></h5>
+                                                                                <p>Uramaki Salmão - 8 unid. - R$ 34,00
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="./images/roll2.png"
+                                                                                class="d-block w-100" alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Rolls -</b></h5>
+                                                                                <p>Uramaki salmão Furai - 8 unid. - R$
+                                                                                    40,00</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="./images/roll3.jpg"
+                                                                                class="d-block w-100" alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Rolls -</b></h5>
+                                                                                <p>Hossomaki Salmão - 8 unid. - R$ 30,00
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="./images/roll4.jpg"
+                                                                                class="d-block w-100" alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Rolls -</b></h5>
+                                                                                <p>Hossomaki Pepino - 8 unid. - R$ 22,00
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="./images/roll5.jpg"
+                                                                                class="d-block w-100" alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Rolls -</b></h5>
+                                                                                <p>Uramaki Salmão Gomae - 8 unid. - R$
+                                                                                    45,00</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button"
+                                                                        data-bs-target="#carouselExampleCaptions"
+                                                                        data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"
+                                                                            aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button"
+                                                                        data-bs-target="#carouselExampleCaptions"
+                                                                        data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"
+                                                                            aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <!-- 4 carrossel -->
+                                                                <div id="carouselExampleCaptions"
+                                                                    class="carousel slide">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="0" class="active"
+                                                                            aria-current="true"
+                                                                            aria-label="Slide 1"></button>
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="1"
+                                                                            aria-label="Slide 2"></button>
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="2"
+                                                                            aria-label="Slide 3"></button>
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="3"
+                                                                            aria-label="Slide 4"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="..." class="d-block w-100"
+                                                                                alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Niguiri e Joe -</b></h5>
+                                                                                <p>Niguimix - 9 unid. (3 niguiris negui
+                                                                                    shoga de atum c/ gengibre, 3
+                                                                                    niguiris barriga salmao trufado, 3
+                                                                                    niguiris salmao brulee) - R$ 65,00
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="..." class="d-block w-100"
+                                                                                alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Niguiri e Joe -</b></h5>
+                                                                                <p>Niguibasic - 8 unid. (2 niguiris
+                                                                                    atum, 2 niguiris salmão,2 niguiris
+                                                                                    peixe branco, 2 niguiris skin) - R$
+                                                                                    50,00</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="..." class="d-block w-100"
+                                                                                alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Niguiri e Joe -</b></h5>
+                                                                                <p>Joe - 2 unid. - R$ 13,50</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="..." class="d-block w-100"
+                                                                                alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Niguiri e Joe -</b></h5>
+                                                                                <p>Jowmix - 8 unid. (2 jow salmão c/
+                                                                                    ovas, 2 jow atum spicy, 2 jow atum
+                                                                                    c/ avocato, 2 jow salmão maçaricado
+                                                                                    c/ caramelo de limão) - R$ 70,00
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button"
+                                                                        data-bs-target="#carouselExampleCaptions"
+                                                                        data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"
+                                                                            aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button"
+                                                                        data-bs-target="#carouselExampleCaptions"
+                                                                        data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"
+                                                                            aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <!-- 5 carrossel -->
+                                                                <div id="carouselExampleCaptions"
+                                                                    class="carousel slide">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button"
+                                                                            data-bs-target="#carouselExampleCaptions"
+                                                                            data-bs-slide-to="0" class="active"
+                                                                            aria-current="true"
+                                                                            aria-label="Slide 1"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="..." class="d-block w-100"
+                                                                                alt="...">
+                                                                            <div
+                                                                                class="carousel-caption d-none d-md-block">
+                                                                                <h5><b>- Carpaccio -</b></h5>
+                                                                                <p>Trufado - 15 unid. - R$ 54,00</p>
+
+                                                                            </div>
+                                                                            <button class="carousel-control-prev"
+                                                                                type="button"
+                                                                                data-bs-target="#carouselExampleCaptions"
+                                                                                data-bs-slide="prev">
+                                                                                <span class="carousel-control-prev-icon"
+                                                                                    aria-hidden="true"></span>
+                                                                                <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next"
+                                                                                type="button"
+                                                                                data-bs-target="#carouselExampleCaptions"
+                                                                                data-bs-slide="next">
+                                                                                <span class="carousel-control-next-icon"
+                                                                                    aria-hidden="true"></span>
+                                                                                <span
+                                                                                    class="visually-hidden">Next</span>
+                                                                            </button>
+                                                                        </div>
+
+                                                                        <!-- 6 carrossel -->
+                                                                        <div id="carouselExampleCaptions"
+                                                                            class="carousel slide">
+                                                                            <div class="carousel-indicators">
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="0" class="active"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="1"
+                                                                                    aria-label="Slide 2"></button>
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="2"
+                                                                                    aria-label="Slide 3"></button>
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="3"
+                                                                                    aria-label="Slide 4"></button>
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="4"
+                                                                                    aria-label="Slide 5"></button>
+                                                                            </div>
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Sashimi -</b></h5>
+                                                                                        <p>Salmão Fresh 10 unid. (Fatias
+                                                                                            de salmão com raspas de
+                                                                                            limão siciliano.) - R$ 42,00
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Sashimi -</b></h5>
+                                                                                        <p>Atum - 10 unid. - R$ 50,00
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Sashimi -</b></h5>
+                                                                                        <p>Sashimi Colection - 20 unid.
+                                                                                            (Fatias de pescados frescos
+                                                                                            e ovas.) - R$ 67,00</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Sashimi -</b></h5>
+                                                                                        <p>Maguro no Gomaae - 10 unid.
+                                                                                            (Fatias de atum selado com
+                                                                                            gergelim. Acompanha molho
+                                                                                            refrescante.) - R$ 57,00</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Sashimi -</b></h5>
+                                                                                        <p>Salmão no Tataki - 10 unid.
+                                                                                            (Fatias de salmão selado ,
+                                                                                            regados com molho tarê e
+                                                                                            raspas de limão siciliano.)
+                                                                                            - R$ 52,00</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <button class="carousel-control-prev"
+                                                                                type="button"
+                                                                                data-bs-target="#carouselExampleCaptions"
+                                                                                data-bs-slide="prev">
+                                                                                <span class="carousel-control-prev-icon"
+                                                                                    aria-hidden="true"></span>
+                                                                                <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next"
+                                                                                type="button"
+                                                                                data-bs-target="#carouselExampleCaptions"
+                                                                                data-bs-slide="next">
+                                                                                <span class="carousel-control-next-icon"
+                                                                                    aria-hidden="true"></span>
+                                                                                <span
+                                                                                    class="visually-hidden">Next</span>
+                                                                            </button>
+                                                                        </div>
+
+                                                                        <!-- 7 carrossel -->
+                                                                        <div id="carouselExampleCaptions"
+                                                                            class="carousel slide">
+                                                                            <div class="carousel-indicators">
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="0" class="active"
+                                                                                    aria-current="true"
+                                                                                    aria-label="Slide 1"></button>
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="1"
+                                                                                    aria-label="Slide 2"></button>
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="2"
+                                                                                    aria-label="Slide 3"></button>
+                                                                                <button type="button"
+                                                                                    data-bs-target="#carouselExampleCaptions"
+                                                                                    data-bs-slide-to="3"
+                                                                                    aria-label="Slide 4"></button>
+                                                                            </div>
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Bebidas -</b></h5>
+                                                                                        <p>Água sem gás - R$ 8,00</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Bebidas -</b></h5>
+                                                                                        <p>Água com gás - R$ 8,00</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Bebidas -</b></h5>
+                                                                                        <p>Refrigerantes - R$ 9,00</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="..." class="d-block w-100"
+                                                                                        alt="...">
+                                                                                    <div
+                                                                                        class="carousel-caption d-none d-md-block">
+                                                                                        <h5><b>- Bebidas -</b></h5>
+                                                                                        <p>H20h! - R$ 12,00</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <button class="carousel-control-prev"
+                                                                                type="button"
+                                                                                data-bs-target="#carouselExampleCaptions"
+                                                                                data-bs-slide="prev">
+                                                                                <span class="carousel-control-prev-icon"
+                                                                                    aria-hidden="true"></span>
+                                                                                <span
+                                                                                    class="visually-hidden">Previous</span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next"
+                                                                                type="button"
+                                                                                data-bs-target="#carouselExampleCaptions"
+                                                                                data-bs-slide="next">
+                                                                                <span class="carousel-control-next-icon"
+                                                                                    aria-hidden="true"></span>
+                                                                                <span
+                                                                                    class="visually-hidden">Next</span>
+                                                                            </button>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
